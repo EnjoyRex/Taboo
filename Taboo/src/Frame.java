@@ -60,9 +60,9 @@ public class Frame {
 
         carte.add(new Carta("Museo", "Arte", "Quadri", "Mostre", "Edificio", "Louvre"));
         carte.add(new Carta("Attore", "Teatro", "Star", "Personaggio", "Film ","Interpretare"));
-        carte.add(new Carta("Stress ", "Nervoso ", "Sotto ", "Ansia ", "Pressione ","Tensione"));
-        carte.add(new Carta("Uber ", "Servizio ", "Taxi ", "Privato ", "Applicazione ","Automobile "));
-        carte.add(new Carta("Casa Bianca ", "Washington ", "Presidente ", "Barack Obama ", "Studio Ovale ","Stati Uniti "));
+        carte.add(new Carta("Stress", "Nervoso", "Sotto", "Ansia", "Pressione","Tensione"));
+        carte.add(new Carta("Uber", "Servizio", "Taxi", "Privato", "Applicazione","Automobile"));
+        carte.add(new Carta("Casa Bianca", "Washington ", "Presidente ", "Barack Obama ", "Studio Ovale ","Stati Uniti "));
         carte.add(new Carta("Carabinieri ", "Arma ", "Polizia ", "Appuntato ", "Caserma ","Denuncia "));
         carte.add(new Carta("Democrazia ", "Forma ", "Popolo ", "Governo ", "Monarchia ","Parlamentare "));
         carte.add(new Carta("Playlist ", "Musica ", "Brani ", "Successione ", "Raccolta ","DJ "));
@@ -102,14 +102,17 @@ public class Frame {
         carte.add(new Carta("Maionese ", "Salsa ", "Condimento ", "Uova ", "Crema ","Limone "));
         carte.add(new Carta("Miliardario ", "Denaro ", "Ricchissimo ", "Magnate ", "Povero ","Soldi "));
         carte.add(new Carta("Nasa ", "Agenzia ", "Spazio ", "Stati Uniti", "Missioni ","Astronavi "));
-        carte.add(new Carta("Casinò ", "San Remo ", "Azzardo ", "Las Vegas ", "Gioco ","Roulette "));
+        carte.add(new Carta("Casinò ", "Sanremo ", "Azzardo ", "Las Vegas ", "Gioco ","Roulette "));
         carte.add(new Carta("Pugile ", "Boxe ", "Ring ", "Pugni ", "Combattimento ","Guantoni "));
         carte.add(new Carta("Fisica ", "Scienza ", "Matematica ", "Corpi ", "Leggi ","Nucleare "));
         carte.add(new Carta("Montagna ", "Mare ", "Roccia ", "Alpi ", "Vette ","Neve "));
-        carte.add(new Carta("Piazza San Pietro ", "Roma ", "Basilica ", "Città del Vaticano ", "Colonnato ","Bernini "));
+        carte.add(new Carta("Piazza San Pietro", "Roma", "Basilica", "Città del Vaticano", "Colonnato","Bernini"));
         carte.add(new Carta("Pane", "Farina", "Marmellata", "Grano", "Salame", "Alimento"));
 
         frame = new JFrame();
+        frame.getContentPane().setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 20));
+        frame.getContentPane().setBackground(SystemColor.window);
+        frame.setAlwaysOnTop(true);
         frame.setBounds(100, 100, 580, 580);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
@@ -190,7 +193,7 @@ public class Frame {
         
         timer = new JLabel("60");
         timer.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 30));
-        timer.setBounds(414, 40, 90, 50);
+        timer.setBounds(425, 38, 90, 50);
         frame.getContentPane().add(timer);
 
         
@@ -223,7 +226,7 @@ public class Frame {
                 faiUscireCarta();
             }
         });
-        btnCorrect.setBounds(365, 155, 125, 35);
+        btnCorrect.setBounds(333, 154, 125, 35);
         frame.getContentPane().add(btnCorrect);
         
 
@@ -231,7 +234,7 @@ public class Frame {
         btnPass.setForeground(Color.BLUE);
         btnPass.setBackground(SystemColor.inactiveCaptionBorder);
         btnPass.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 25));
-        btnPass.setBounds(365, 205, 125, 35);
+        btnPass.setBounds(333, 204, 125, 35);
         frame.getContentPane().add(btnPass);
         btnPass.addActionListener(new ActionListener() {
             @Override
@@ -265,7 +268,7 @@ public class Frame {
                 faiUscireCarta();
             }
         });
-        btnTaboo.setBounds(365, 255, 125, 35);
+        btnTaboo.setBounds(333, 254, 125, 35);
         frame.getContentPane().add(btnTaboo);
         
         JLabel lblNewLabel = new JLabel("Team:");
@@ -275,7 +278,7 @@ public class Frame {
 
         JLabel lblNewLabel_1 = new JLabel("Timer:");
         lblNewLabel_1.setFont(new Font("Yu Gothic UI Semilight", Font.PLAIN, 30));
-        lblNewLabel_1.setBounds(322, 34, 96, 63);
+        lblNewLabel_1.setBounds(333, 32, 96, 63);
         frame.getContentPane().add(lblNewLabel_1);
 
         JLabel lblNewLabel_2 = new JLabel("Tot.");
